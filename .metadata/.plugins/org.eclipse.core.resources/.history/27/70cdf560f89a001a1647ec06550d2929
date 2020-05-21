@@ -1,0 +1,15 @@
+package actions;
+
+import org.openqa.selenium.By;
+
+import utils.DriverContext;
+
+public interface MouseAction {
+
+	default void clicar(By elemento) {
+		UtilActions.esperarElementoExistir(elemento);
+		DriverContext.getDriver().findElement(elemento).click();
+	}
+
+
+}

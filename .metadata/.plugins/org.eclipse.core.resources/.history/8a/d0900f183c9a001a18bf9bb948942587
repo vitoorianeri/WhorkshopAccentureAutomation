@@ -1,0 +1,33 @@
+package utils;
+
+public class Constants {
+	
+	//Caminho para os drivers no projeto. Boa pr�tica para evitar erros na escrita e padronização para versionamento do projeto
+	public static  String PATH_CHROMEDRIVER = retornarChromePathByOS();
+	public static final String PATH_FIREFOXDRIVER =  "src\\main\\java\\resources\\geckodriver.exe";
+	public static final String PATH_IEDRIVER32 = "src\\main\\java\\resources\\IEDriverServer32.exe";
+	public static final String PATH_IEDRIVER64 = "src\\main\\java\\resources\\IEDriverServer.exe";	
+	public static final int timeOut = 10;
+	
+	
+	private static String retornarChromePathByOS()
+	{
+		String OS = System.getProperty("os.name").toLowerCase();
+		String path = null;
+		if(OS.contains("win"))
+		{
+			path = "src\\main\\java\\resources\\chromedriver.exe";
+		}
+		else if (OS.contains("nix") ||OS.contains("nux") || OS.contains("aix"))
+		{
+			path = "src/main/java/resources/chromedriverLinux";
+		}
+		else if(OS.contains("mac"))
+		{
+			path = "src//main//java//resources//mac//chromedriver";
+		}
+		
+		return path;
+	}
+	
+}

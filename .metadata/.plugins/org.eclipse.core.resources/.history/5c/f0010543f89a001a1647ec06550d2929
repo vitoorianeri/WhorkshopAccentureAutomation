@@ -1,0 +1,9 @@
+package pages;
+
+import org.openqa.selenium.By;
+
+public class SearchPage {
+	public static By txtSearch = By.id("search_query_top");
+	public static By btSearch = By.name("submit_search");
+
+}

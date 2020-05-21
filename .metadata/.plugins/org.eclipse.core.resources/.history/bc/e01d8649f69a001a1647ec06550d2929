@@ -1,0 +1,20 @@
+package pages;
+
+import org.openqa.selenium.By;
+
+public class LoginPage {
+
+	public static By linkSignIn       = By.linkText("Sign in");
+	public static By txtEmail         = By.id("email");
+	public static By txtPassword       = By.id("passwd");
+	public static By btSubmit         = By.id("SubmitLogin");
+	public static By imgClique = By.className("replace-2x img-responsive");
+	public static By btQtde  = By.id("quantity_wanted");
+	public static By cbSize = By.id("group_1");
+	public static By btColor = By.id("color_15");
+	public static By btAdd = By.id("add_to_cart");
+	public static By btProceed = By.className("icon-chevron-right right");
+	public static By btProceed2 = By.className("icon-chevron-right right");
+	
+	
+}

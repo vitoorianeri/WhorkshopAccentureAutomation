@@ -1,0 +1,21 @@
+package pages;
+
+import org.openqa.selenium.By;
+
+public class SearchPage {
+	public static By txtSearch = By.id("search_query_top");
+	public static By itensLista = By.xpath("");
+	public static By btQuantity = By.xpath("");
+	public static By cbSize = By.id("group_1");
+	public static By btAddcart = By.name("Submit");
+	
+	public static By btProceed = By.xpath("");
+	public static By btSummaryProceed = By.xpath("");
+	public static By btAdressProceed = By.xpath("");
+	
+	public static By cbAgree = By.id("cgv");
+	public static By btShippingProceed = By.name("processCarrier");
+	
+	public static By btPayment = By.xpath("");
+	
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestAutomationPractice.testRealizarCompra" project="workshop-online-master" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="tests.TestAutomationPractice" time="52.9" uniqueid="[engine:junit-vintage]/[runner:tests.TestAutomationPractice]">
+    <testcase name="testRealizarCompra" classname="tests.TestAutomationPractice" time="52.9" displayname="testRealizarCompra" uniqueid="[engine:junit-vintage]/[runner:tests.TestAutomationPractice]/[test:testRealizarCompra(tests.TestAutomationPractice)]"/>
+  </testsuite>
+</testrun>

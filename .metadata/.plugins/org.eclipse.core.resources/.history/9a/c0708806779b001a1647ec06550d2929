@@ -1,0 +1,34 @@
+package actions;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import utils.DriverContext;
+
+public interface MouseAction {
+
+	default void clicar(By elemento) {
+		
+		List<WebElement> links = DriverContext.getDriver().findElements(By.className("btn btn-default button button-medium"));
+		
+		UtilActions.esperarElementoExistir(elemento);
+		DriverContext.getDriver().findElement(elemento).click();
+	}
+	
+	default void clicarLista (By itensLista, String texto) {
+		List<WebElement> links = DriverContext.getDriver().findElements(itensLista);
+		
+		WebElement linkfounded = null;
+		
+		for (WebElement link: links) {
+			if (link.getText().contains(texto))
+				//link.click();
+				linkfounded = link;
+		}
+		
+		linkfounded.click();
+	}
+
+
+}
